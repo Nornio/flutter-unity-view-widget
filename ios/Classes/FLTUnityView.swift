@@ -7,13 +7,14 @@
 
 import Foundation
 import UIKit
-import UnityFramework
+// import UnityFramework
 
 class FLTUnityView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         if (!self.bounds.isEmpty) {
-            GetUnityPlayerUtils().ufw?.appController()?.rootView.frame = self.bounds
+            print("Hepp")
+            // GetUnityPlayerUtils().ufw?.appController()?.rootView.frame = self.bounds
         }
     }
 }
